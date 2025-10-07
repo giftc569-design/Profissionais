@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução</title>
+    <style>
+      body {
+        justify-items: center;
+      }
+      .pai {
+        border: 2px solid black;
+        display: flex;
+        height: 400px;
+        width: 700px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px rgb(200 0 0 / 70%);
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .filho {
+        border: 2px solid black;
+        display: flex;
+        height: 70px;
+        width: 70px;
+        border: 15px;
+        box-shadow: 0px 0px 15px rgb(200 0 0 / 70%);
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Eventos do mouse</h1>
+    <div class="pai">
+      <div class="filho" id="div 1">DIV 1</div>
+      <div class="filho" id="div 2">DIV 2</div>
+      <div class="filho" id="div 3">DIV 3</div>
+      <div class="filho" id="div 4">DIV 4</div>
+    </div>
+    <div class="pai">
+      <div class="filho">DIV 1</div>
+      <div class="filho">DIV 2</div>
+      <div class="filho">DIV 3</div>
+      <div class="filho">DIV 4</div>
+    </div>
+    <script>
+        // Aprendendo Evento de Mouse
+      document.querySelector('#div1').addEventListener('click', function(){
+        alert("voce clicou na div1")
+      })
+         document.querySelector('#div1').addEventListener('click', function(){
+        alert("voce clicou na div2")
+      })
+    </script>
+  </body>
+</html>
